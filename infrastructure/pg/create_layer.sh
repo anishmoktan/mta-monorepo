@@ -11,6 +11,6 @@ zip -r nodejs.zip nodejs
 
 aws lambda publish-layer-version --layer-name nodejs-pg --description "node.js pg dependency"  \
  --zip-file fileb://nodejs.zip \
- --compatible-runtimes node14js.x node16js.x
+ --compatible-runtimes nodejs14.x nodejs16.x
 
 #   --compatible-architectures "x86_64"
